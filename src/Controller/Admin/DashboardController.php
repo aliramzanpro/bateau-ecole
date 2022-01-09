@@ -10,6 +10,8 @@ use App\Entity\User;
 use App\Entity\Theme;
 use App\Entity\Contact;
 use App\Entity\License;
+use App\Entity\Product;
+use App\Entity\Category;
 use App\Entity\Document;
 use App\Entity\Advertise;
 use App\Entity\InfoContact;
@@ -50,6 +52,8 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linkToCrud('Mes Informations', 'fas fa-info-circle', InfoContact::class);
         yield MenuItem::linkToCrud('Thème(actus)', 'fas fa-text-height', Theme::class);
         yield MenuItem::linkToCrud('Utilisateurs', 'fas fa-user', User::class);
+        yield MenuItem::linkToCrud('Category', 'fas fa-list', Category::class);
+        yield MenuItem::linkToCrud('Product', 'fas fa-tag', Product::class);
         yield MenuItem::linkToUrl('Retour sur le site', 'fas fa-desktop', '/');
         // yield MenuItem::linkToCrud('The Label', 'fas fa-list', EntityClass::class);
     }
