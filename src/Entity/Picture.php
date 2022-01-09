@@ -27,6 +27,11 @@ class Picture
      */
     private $actu;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Product::class, inversedBy="pictures", cascade={"persist"})
+     */
+    private $product;
+
     public function __toString()
     {
         return $this->url;
@@ -57,6 +62,18 @@ class Picture
     public function setActu(?Blog $actu): self
     {
         $this->actu = $actu;
+
+        return $this;
+    }
+
+    public function getProduct(): ?Product
+    {
+        return $this->product;
+    }
+
+    public function setProduct(?Product $product): self
+    {
+        $this->product = $product;
 
         return $this;
     }
