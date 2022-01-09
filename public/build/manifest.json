@@ -1,0 +1,11 @@
+{
+  "build/app.css": "/build/app.css",
+  "build/app.js": "/build/app.js",
+  "build/runtime.js": "/build/runtime.js",
+  "build/vendors~app.js": "/build/vendors~app.js",
+  "build/fonts/GothamBold.ttf": "/build/fonts/GothamBold.108854bb.ttf",
+  "build/fonts/GothamBook.ttf": "/build/fonts/GothamBook.58fb9151.ttf",
+  "build/fonts/GothamMedium.ttf": "/build/fonts/GothamMedium.0a910c0b.ttf",
+  "build/images/favicon.png": "/build/images/favicon.02074073.png",
+  "build/images/logofb.png": "/build/images/logofb.3a0ebe4b.png"
+}
